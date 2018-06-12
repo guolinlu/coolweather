@@ -5,6 +5,7 @@ import android.text.TextUtils;
 import com.example.lenovo.coolweather.db.City;
 import com.example.lenovo.coolweather.db.County;
 import com.example.lenovo.coolweather.db.Province;
+import com.example.lenovo.coolweather.gson.Weather;
 import com.google.gson.Gson;
 
 import org.json.JSONArray;
@@ -86,7 +87,7 @@ public class Utility {
 
     /**
      * 将返回的JSON 数据解析成Weather 实体类
-     *//*
+     */
     public static Weather handleWeatherResponse(String response) {
         try {
             JSONObject jsonObject = new JSONObject(response);
@@ -97,5 +98,5 @@ public class Utility {
             e.printStackTrace();
         }
         return null;
-    }*/
+    }
 }
